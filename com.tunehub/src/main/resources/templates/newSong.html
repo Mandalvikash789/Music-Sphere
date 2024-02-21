@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Tune Hub : New Song Page</title>
+<link rel="stylesheet" th:href="@{/css/newSong.css}">
+</head>
+<body>
+	<!-- 
+		<form action="addSong" method="post">
+		<label>Song Name : </label>
+		<input type="text" name="name" required="required"/><br><br>
+		<label>Song Artist : </label>
+		<input type="text" name="artist" required="required"/><br><br>
+		<label>Song Genre : </label>
+		<input type="text" name="genre" required="required"/><br><br>
+		<label>Song Link : </label>
+		<input type="text" name="link" required="required"/><br><br>
+		<input type="submit" value="ADD SONG"> 
+	</form>
+	 -->
+
+	<img alt="music" src="https://plus.unsplash.com/premium_photo-1681263751450-53354fecab40?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bXVzaWMlMjBsb3ZlcnxlbnwwfHwwfHx8MA%3D%3D">
+	<div class="body">
+		<div class="navbar">
+			<div class="home">
+				<a href="adminHome">Go to Home Page</a>
+			</div>
+		</div>
+		<div class="container">
+			<form action="addSong" method="post">
+				<label>Song Name:</label> <input type="text" name="name"
+					placeholder="Enter Song Name"> <br>
+				<br> <label>Song Artist:</label> <input type="text"
+					name="artist" placeholder="Enter Artist Name"> <br>
+				<br> <label>Song Genre:</label> <input type="text" name="genre"
+					placeholder="Enter Song Genre"> <br>
+				<br> <label>Song Link:</label> <input type="text" name="link"
+					placeholder="Enter Song Link"> <br>
+				<br> <input type="submit" value="Add Song">
+
+
+			</form>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Tune Hub : Create PlayList Page</title>
+<link rel="stylesheet" th:href="@{/css/createPlaylist.css}">
+</head>
+<body>
+	<!--  
+	<h1>From Create Playlist Class</h1>
+	<form action="addPlaylist" method="post">
+		<label>Playlist Name : </label>
+		<input type="text" name="name" required="required"/><br><br>
+		
+		<div th:each="song:${songs}">
+			<input type="checkbox" th:name="songs" th:value="${song.id}"/>
+			<label th:text="${song.name}"></label>
+		</div>
+		<input type="submit" value="ADD PLAYLIST">
+	</form>
+-->
+	<img alt="music"
+		src="https://www.jotform.com/blog/wp-content/uploads/2022/02/mohammad-metri-1oKxSKSOowE-unsplash.jpg">
+	<div class="body">
+		<div class="navbar">
+			<div class="home">
+				<a href="adminHome">Go to Home Page</a>
+			</div>
+			<div class="logout">
+				<a href="login">Logout</a>
+			</div>
+		</div>
+		<div class="container">
+			<form action="addPlaylist" method="get">
+				<label>Playlist Name:</label> <input type="text" name="name" /> <br>
+				<br>
+
+				<div th:each="song:${songs}" class="songs">
+					<input type="checkbox" th:name="songs" th:value="${song.id}" /> <label
+						th:text="${song.name}"></label>
+				</div>
+				<input type="submit" value="Add Playlist" />
+			</form>
+		</div>
+	</div>
+</body>
+</html>

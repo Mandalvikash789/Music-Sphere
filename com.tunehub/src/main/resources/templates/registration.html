@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Tune Hub : Registration Page</title>
+<link rel="stylesheet" th:href="@{/css/registration.css}">
+</head>
+<body>
+	<!--  
+		<form action="register" method="post">
+			<label>User Name : </label>
+			<input type="text" name="username" required="required"><br><br>
+			<label>Email : </label>
+			<input type="email" name="email" required="required"><br><br>
+			<label>Password : </label>
+			<input type="password" name="password" required="required"><br><br>
+			<label>Gender : </label>
+			<input type="radio" name="gender" value="male">Male
+			<input type="radio" name="gender" value="female">Female
+			<input type="radio" name="gender" value="other">Others<br><br>
+			<label>Role : </label>
+			<input type="radio" name="role" value="admin">Admin
+			<input type="radio" name="role" value="customer">Customer<br><br>
+			<label>Address : </label>
+			<textarea name="address" required="required"></textarea><br><br>
+			<input type="submit" value="Register">
+		</form>
+	-->
+
+	<div class="container">
+
+		<h3 class="quote">Music is the moonlight in the gloomy night of
+			life...</h3>
+
+
+		<form action="registration" method="post">
+			<label><h2>Register here</h2></label> <label>User Name:</label> <input
+				type="text" name="username" required="required"
+				placeholder="Enter Your User Name"><br> <label>Email:</label>
+			<input type="email" name="email" required="required"
+				placeholder="Enter Your Email"><br> <label>
+				Password:</label> <input type="password" name="password" required="required"
+				placeholder="Enter Your Password"><br> <label
+				id="gender">Gender:</label>
+			<div class="gender">
+				<input type="radio" name="gender" value="male"><label>Male</label>
+				<input type="radio" name="gender" value="female"><label>female</label>
+				<input type="radio" name="gender" value="other"><label>Other</label><br>
+			</div>
+			<label id="role">Role:</label>
+			<div class="role">
+				<input type="radio" name="role" value="admin"><label>Admin</label>
+				<input type="radio" name="role" value="customer"><label>Customer</label>
+			</div>
+			<br> <label>Address:</label>
+			<textarea name="address" required="required"
+				placeholder="Enter Your Address..."></textarea>
+			<br> <input class=".btn-hover .color-6" type="submit"
+				value="REGISTER">
+			<div class="footer">
+				<p>
+					Already have an account... <a href="login">LOGIN</a>
+				</p>
+			</div>
+		</form>
+	</div>
+
+	<div class="image2"></div>
+	<div class="image1"></div>
+</body>
+</html>

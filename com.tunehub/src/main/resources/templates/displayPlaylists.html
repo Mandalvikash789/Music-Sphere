@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Tune Hub : Display PlayList Page</title>
+<link rel="stylesheet" th:href="@{/css/displayPlaylists.css}">
+<style type="text/css">
+iframe {
+	height: 200px;
+	width: 700px;
+}
+</style>
+</head>
+<body>
+	<!-- 
+		<table border>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Songs</th>
+			</tr>
+		</thead>
+		
+		<tbody>
+			<tr th:each="plist:${allPlaylists}">
+				<td th:text="${plist.name}"></td>
+				<td>
+					<ul>
+						<li th:each="song : ${plist.songs}">
+							<span th:text="${song.name}"></span>
+							<audio controls>
+								<source th:src="${song.link}" type="audio/mpeg">
+							</audio>
+						</li>
+					</ul>
+				</td>
+			</tr>			
+		</tbody>
+	</table>
+	 -->
+
+	<div class="navbar">
+		<div class="home">
+			<a href="adminHome">Go to Home Page</a>
+		</div>
+		<div class="logout">
+			<a href="login">Logout</a>
+		</div>
+	</div>
+	<table border class="styled-table">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Songs</th>
+
+			</tr>
+
+		</thead>
+		<tbody>
+			<tr th:each="plist :${allPlaylists}">
+				<td th:text="${plist.name}"></td>
+				<td>
+					<ul>
+						<li th:each="song:${plist.songs}">
+							<div class="song_name">
+								<span th:text="${song.name}"></span>
+							</div>
+							<div class="songs">
+								<audio controls>
+									<source th:src="${song.link}" type="audio/mpeg">
+								</audio>
+							</div>
+						</li>
+
+					</ul>
+
+				</td>
+
+			</tr>
+
+		</tbody>
+
+
+	</table>
+</body>
+</html>
